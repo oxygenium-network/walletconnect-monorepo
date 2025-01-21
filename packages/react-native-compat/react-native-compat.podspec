@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.authors      = package["author"]
 
   s.platforms    = { :ios => "11.0", :visionos => "1.0" }
-  s.source       = { :git => "https://github.com/walletconnect/walletconnect-monorepo.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/oxygenium-network/walletconnect-monorepo.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm}"
 

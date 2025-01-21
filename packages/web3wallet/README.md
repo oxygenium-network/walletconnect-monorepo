@@ -144,4 +144,4 @@ await web3wallet.core.pairing.pair({ uri: request.uri, activatePairing: true });
 web3wallet.on("auth_request", handler);
 ```
 
-## Already using Sign or Auth? Check our [migration guide](https://github.com/WalletConnect/web-examples/tree/main/wallets/react-web3wallet#migrate-from-sign-client-to-web3wallet)
+## Already using Sign or Auth? Check our [migration guide](https://github.com/oxygenium-network/web-examples/tree/main/wallets/react-web3wallet#migrate-from-sign-client-to-web3wallet)

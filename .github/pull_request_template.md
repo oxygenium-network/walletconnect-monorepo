@@ -1,4 +1,4 @@
-> Creating a release? Please use the [Release PR Template](https://github.com/WalletConnect/walletconnect-monorepo/blob/v2.0/.github/pr_template_release.md) instead.
+> Creating a release? Please use the [Release PR Template](https://github.com/oxygenium-network/walletconnect-monorepo/blob/v2.0/.github/pr_template_release.md) instead.
 
 ## Description
 

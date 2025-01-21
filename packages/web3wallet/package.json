@@ -29,14 +29,19 @@
     "prettier": "prettier --check '{src,test}/**/*.{js,ts,jsx,tsx}'"
   },
   "dependencies": {
-    "@walletconnect/auth-client": "2.1.2",
-    "@walletconnect/core": "2.17.1",
+    "@walletconnect/auth-client": "^0.3.2",
+    "@walletconnect/core": "^2.17.5",
     "@walletconnect/jsonrpc-provider": "1.0.14",
     "@walletconnect/jsonrpc-utils": "1.0.8",
     "@walletconnect/logger": "2.1.2",
-    "@walletconnect/sign-client": "2.17.1",
+    "@walletconnect/sign-client": "^2.17.5",
     "@walletconnect/types": "2.17.1",
-    "@walletconnect/utils": "2.17.1"
+    "@walletconnect/utils": "^2.17.0",
+    "cosmos-wallet": "0.1.0",
+    "ethereum-test-network": "0.0.8",
+    "ethers": "6.13.5",
+    "lerna": "8.1.9",
+    "rollup": "2.79.2"
   },
   "devDependencies": {
     "@ethersproject/wallet": "5.7.0"

@@ -41,8 +41,9 @@
     "@walletconnect/jsonrpc-utils": "1.0.8",
     "@walletconnect/sign-client": "2.17.5",
     "@walletconnect/types": "2.17.5",
-    "@walletconnect/utils": "2.17.5",
+    "@walletconnect/utils": "^2.17.0",
     "events": "3.3.0",
+    "rollup": "2.79.2",
     "uint8arrays": "3.1.0"
   }
 }

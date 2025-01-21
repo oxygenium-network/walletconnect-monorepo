@@ -43,10 +43,11 @@
     "@walletconnect/safe-json": "1.0.2",
     "@walletconnect/time": "1.0.2",
     "@walletconnect/types": "2.17.5",
-    "@walletconnect/utils": "2.17.5",
+    "@walletconnect/utils": "^2.17.0",
     "@walletconnect/window-getters": "1.0.1",
     "events": "3.3.0",
     "lodash.isequal": "4.5.0",
+    "rollup": "2.79.2",
     "uint8arrays": "3.1.0"
   },
   "devDependencies": {

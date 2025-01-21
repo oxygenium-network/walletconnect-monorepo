@@ -40,6 +40,8 @@
     "prettier": "prettier --check '{src,test}/**/*.{js,ts,jsx,tsx}'"
   },
   "dependencies": {
+    "@walletconnect/auth-client": "0.3.2",
+    "@walletconnect/core": "2.17.5",
     "@walletconnect/events": "1.0.1",
     "@walletconnect/jsonrpc-http-connection": "1.0.8",
     "@walletconnect/jsonrpc-provider": "1.0.14",
@@ -49,15 +51,17 @@
     "@walletconnect/logger": "2.1.2",
     "@walletconnect/sign-client": "2.17.5",
     "@walletconnect/types": "2.17.5",
-    "@walletconnect/utils": "2.17.5",
+    "@walletconnect/utils": "^2.17.0",
     "events": "3.3.0",
-    "lodash": "4.17.21"
+    "lerna": "8.1.9",
+    "lodash": "4.17.21",
+    "rollup": "2.79.2"
   },
   "devDependencies": {
-    "cosmos-wallet": "1.2.0",
-    "ethereum-test-network": "0.1.6",
-    "ethers": "5.7.0",
+    "cosmos-wallet": "^0.1.0",
+    "ethereum-test-network": "^0.0.8",
+    "ethers": "^6.13.5",
     "uint8arrays": "3.0.0",
-    "web3": "1.7.5"
+    "web3": "^4.16.0"
   }
 }

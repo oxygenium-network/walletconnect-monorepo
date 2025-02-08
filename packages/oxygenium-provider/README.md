@@ -1,15 +1,15 @@
 ---
-description: Alephium Wallet JSON-RPC Methods
+description: Oxygenium Wallet JSON-RPC Methods
 ---
 
-# Alephium
+# Oxygenium
 
-All Alephium wallets should respond to the following JSON-RPC methods which are
+All Oxygenium wallets should respond to the following JSON-RPC methods which are
 received across the WalletConnect connection. There is no method to get
 addresses because WalletConnect returns a set of addresses to use when a pairing
 is successful or re-establishes. More methods may be added in the future.
 
-## alephium_getServices
+## oxygenium_getServices
 
 This method returns an object with various service URLs specified by the wallet,
 such as a cryptocurrency node URL, and an explorer URL.
@@ -35,7 +35,7 @@ node for which they can fetch blockchain information.
 {
   "id": 1,
   "jsonrpc": "2.0",
-  "method": "alephium_getServices",
+  "method": "oxygenium_getServices",
   "params": {}
 }
 
@@ -45,15 +45,15 @@ node for which they can fetch blockchain information.
   "jsonrpc": "2.0",
   "result":  [
       {
-        "nodeHost": "https://testnet.alephium.org",
-        "explorerUrl": "https://explorer.alephium.org",
-        "explorerApiHost": "https://api.explorer.alephium.org",
+        "nodeHost": "https://testnet.oxygenium.org",
+        "explorerUrl": "https://explorer.oxygenium.org",
+        "explorerApiHost": "https://api.explorer.oxygenium.org",
       }
     ]
 }
 ```
 
-## alephium_signAndSubmitTx
+## oxygenium_signAndSubmitTx
 
 This method returns transaction id for the provided transaction.
 
@@ -99,7 +99,7 @@ Here are some examples for each transaction type.
 {
   "id": 1,
   "jsonrpc": "2.0",
-  "method": "alephium_signAndSubmitTx",
+  "method": "oxygenium_signAndSubmitTx",
   "params": {
 		"fromAddress": "1IiXJwgCAjyn7jmsXwZBBQGJHbiAB2NZonirArnxrS5y6",
 		"toAddress": "16iXJwgCBjYn6jmsXwAXXQGJHbiAA2NZonirA8nxYR7x5",
@@ -124,7 +124,7 @@ Here are some examples for each transaction type.
 {
   "id": 1,
   "jsonrpc": "2.0",
-  "method": "alephium_signAndSubmitTx",
+  "method": "oxygenium_signAndSubmitTx",
   "params": {
 		"fromAddress": "1IiXJwgCAjyn7jmsXwZBBQGJHbiAB2NZonirArnxrS5y6",
 		"toAddress": "16iXJwgCBjYn6jmsXwAXXQGJHbiAA2NZonirA8nxYR7x5",
@@ -154,7 +154,7 @@ Here are some examples for each transaction type.
 {
   "id": 1,
   "jsonrpc": "2.0",
-  "method": "alephium_signAndSubmitTx",
+  "method": "oxygenium_signAndSubmitTx",
   "params": {
 		"fromAddress": "1IiXJwgCAjyn7jmsXwZBBQGJHbiAB2NZonirArnxrS5y6",
 		"gasAmount": "80000000000000000", // Is required for script

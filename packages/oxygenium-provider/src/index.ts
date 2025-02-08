@@ -9,8 +9,8 @@ import {
 } from "@walletconnect/signer-connection";
 
 export const signerMethods = [
-  "alephium_getServices",
-  "alephium_signAndSubmitTx"
+  "oxygenium_getServices",
+  "oxygenium_signAndSubmitTx"
 ];
 
 export const providerEvents = {
@@ -20,16 +20,16 @@ export const providerEvents = {
   },
 };
 
-export interface AlephiumProviderOptions {
+export interface OxygeniumProviderOptions {
   chains: string[];
   methods?: string[];
   client?: SignerConnectionClientOpts;
 }
 
-class AlephiumProvider {
+class OxygeniumProvider {
   public events: any = new EventEmitter();
 
-  public namespace = "alephium";
+  public namespace = "oxygenium";
   public chains: string[] = [];
   public methods: string[] = signerMethods;
 
@@ -37,7 +37,7 @@ class AlephiumProvider {
 
   public signer: JsonRpcProvider;
 
-  constructor(opts?: AlephiumProviderOptions) {
+  constructor(opts?: OxygeniumProviderOptions) {
     this.chains = opts?.chains || this.chains;
     this.methods = opts?.methods ? [...opts?.methods, ...this.methods] : this.methods;
     this.signer = this.setSignerProvider(opts?.client);
@@ -54,7 +54,7 @@ class AlephiumProvider {
   }
 
   public async enable(): Promise<any> {
-    return await this.request({ method: "alephium_getAccounts" });
+    return await this.request({ method: "oxygenium_getAccounts" });
   }
 
   public async connect(): Promise<void> {
@@ -157,4 +157,4 @@ class AlephiumProvider {
   }
 }
 
-export default AlephiumProvider;
+export default OxygeniumProvider;

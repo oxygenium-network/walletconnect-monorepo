@@ -39,10 +39,10 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Build and publish package
         run: |
-          cd packages/alephium-provider/
+          cd packages/oxygenium-provider/
           npm ci
           npm run build
           npm pack
-          npm publish alephium-walletconnect-provider-*.tgz --access public --tag ${{ needs.get_dist_tag.outputs.DIST_TAG }}
+          npm publish oxygenium-walletconnect-provider-*.tgz --access public --tag ${{ needs.get_dist_tag.outputs.DIST_TAG }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

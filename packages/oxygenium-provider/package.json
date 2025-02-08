@@ -1,6 +1,6 @@
 {
-  "name": "@alephium/walletconnect-provider",
-  "description": "Alephium Provider for WalletConnect Protocol",
+  "name": "@oxygenium/walletconnect-provider",
+  "description": "Oxygenium Provider for WalletConnect Protocol",
   "version": "2.0.0-beta.26-2",
   "author": "WalletConnect, Inc. <walletconnect.com>",
   "homepage": "https://github.com/walletconnect/walletconnect-monorepo/",
